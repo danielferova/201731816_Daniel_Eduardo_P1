@@ -4,7 +4,8 @@
   "description": "Proyecto 1, Lenguajes de programación. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node src",
+    "start": "node src"
   },
   "repository": {
     "type": "git",
