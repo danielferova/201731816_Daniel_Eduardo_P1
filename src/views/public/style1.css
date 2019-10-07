@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
 h1{
     margin-left: 30%;
     width: 1000;
@@ -7,10 +10,9 @@ h1{
     color: rgb(245, 245, 248);
 
 }
-body{
-    background-color: rgb(0, 0, 0);
-}
+
 p{
+
     margin-left: 30%;
     font-size: 35px;
     font-family: 'Times New Roman', Times, serif;
@@ -110,7 +112,9 @@ h6{
 #unico3{
     margin: 10% 30%;
     width: 55%;
+    font-family: 'Times New Roman', Times, serif;
     display: block;
+    color: #a50e0e;
     
 }
 .colorRojo{
