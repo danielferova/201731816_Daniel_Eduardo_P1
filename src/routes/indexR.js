@@ -19,6 +19,8 @@ router.get('/totito', (req, res) => {
 });
 */
 
+
+
 router.get('/', (req, res) => {
     res.render('info', { max: 15 });
 });
@@ -51,7 +53,7 @@ router.get('/users', (req, res) => {
             id: '4',
             carne: '202'
         });
-    }, 4500);
+    }, 3000);
 
     /*
         setTimeout(() => {
