@@ -1,4 +1,4 @@
-//imports 
+//imports js
 
 const path = require('path');
 const express = require('express');
@@ -21,7 +21,7 @@ exec('ls', function(err, stdout, stderr) {
 
 //configuración 
 app.set('view engine', 'ejs');
-app.set('port', 3000);
+app.set('port', 2000);
 app.set('views', path.join(__dirname, 'views'));
 
 //app.use(express.static(path.join(__dirname, "public")));

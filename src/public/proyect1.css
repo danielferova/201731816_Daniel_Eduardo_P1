@@ -7,7 +7,7 @@ h1{
     font-size: 45px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: rgb(245, 245, 248);
+    color: black;
 
 }
 
@@ -37,7 +37,7 @@ h3{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: chartreuse;
+    color:  #a50e0e;
 }
 h4{
     font-size: 25px;
@@ -64,6 +64,7 @@ h6{
     width: 55%;
     display: block;
     border: 1px solid #f5eeee;
+    color:  #a50e0e;
 }
 .ingresar2{
     width: 100;
