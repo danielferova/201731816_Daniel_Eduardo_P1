@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="proyect1.css">
 <head>
 
-
+        <title>Analizador</title>
        <% include bloque1/head.html%>
 </head>
 <body>
@@ -46,6 +46,26 @@
                 <div id="listado"></div>
             </ul>
     </article>
+    
+    <div id="unico2">
+            <form action="/mo" method="GET" enctype="multipart/form-data">
+                <!-- <input type="file" name="fichero" value="Selecionar" id="unico2" class="btn" required /><br> -->
+                </form>
+              
+                <form action="/analizador" method="GET" id="formulario"  enctype="multipart/form-data">
+                <input type="file" id="cadena" />
+                <p> Contenido del archivo: </p>
+                <pre id="unico2"></pre>
+          
+                <% console.log("Estamos en Analizador"); 
+                    
+                %>
+                <script src="./proyect1.js"></script>
+
+    </div>
+
+          
+          
 
         <!--Aca esta mi imagen-->
        <a href="#">
@@ -70,7 +90,7 @@
         
         
     </footer>
-    <script type="text/javascript" src="./practica1.js"></script>
+  
 
       </section>
 
