@@ -14,10 +14,12 @@ function leerArchivo(e) {
   //funcion para mostrar lo que acaba de leer
   function mostrarContenido(contenido) {
     
-    var elemento = document.getElementById('contenido-archivo');
+    var elemento = document.getElementById('archivotxt');
     // formulario.innerHTML = "<input type=\"submit\" name=\"bote\" value=\"Analizar\"/><br>"+"</form>";
-    elemento.innerHTML =elemento.innerHTML+  "<input type=\"submit\" name=\"bote\" value=\"Analizar\"/><br>"+"</form>"+contenido;
+    //elemento.innerHTML =elemento.innerHTML+  "<input type=\"submit\" name=\"bote\" value=\"Analizar\"/><br>"+"</form>"+contenido;
+    elemento.innerHTML =contenido;
+  document.getElementById('getButton').style.display = 'inline';
   }
-  
-  document.getElementById('file-input')
+  //para poder ver
+  document.getElementById('fileinput')
     .addEventListener('change', leerArchivo, false);

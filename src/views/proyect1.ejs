@@ -16,16 +16,7 @@
 </header>
 
     <section>
-        <article>
-            <h2>
-                <b>
-                    <i>
-                            Debe ingresar un texto:
-                    </i>
-                        
-                </b>
-               </h2>
-           </article>
+        
 
     <article >
            <div id="unico">
@@ -39,32 +30,54 @@
         </div>
               
     </article>
-    <!-- Aca esta mi titulo de mi historial o listado -->
+   
+    <p>---------------------------------------------------------------------------------------------------------</p>
+
+    <article>
+            <h2>
+                <b>
+                    <i>
+                            Debe seleccionar un archivo de texto:
+                    </i>
+                        
+                </b>
+               </h2>
+           </article>
+
+    <div id="unico2">
+            <form action="/mo" method="POST" enctype="multipart/form-data">
+                <!-- <input type="file" name="fichero" value="Selecionar" id="unico2" class="btn" required /><br> -->
+                </form>
+              
+                
+                <input type="file" id="fileinput" (change)="onFileChange($event)"/>
+                <p> Contenido del archivo: </p>
+                <pre id="contenido-archivo1"></pre>
+                <textarea name="archivotxt" id="archivotxt" cols="60" rows="20"></textarea>
+                <br>
+
+           
+           
+            <!--Para establecer comunicacion con el Server --> 
+            <input type="button" name="bote" id="getButton" value="Enviar" style="display:none"/><br>    
+
+                <% console.log("Estamos en Analizador"); 
+                    
+                %>
+                <script src="./proyect1.js"></script>
+                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+                <script src="./Proyect1Comun.js"></script>
+    </div>
+
+    
+
+           <!-- Aca esta mi titulo de mi historial o listado -->
     <article class="contenedor">
             <p>Historial ó Listado:</p>
             <ul>
                 <div id="listado"></div>
             </ul>
     </article>
-    
-    <div id="unico2">
-            <form action="/mo" method="GET" enctype="multipart/form-data">
-                <!-- <input type="file" name="fichero" value="Selecionar" id="unico2" class="btn" required /><br> -->
-                </form>
-              
-                <form action="/analizador" method="GET" id="formulario"  enctype="multipart/form-data">
-                <input type="file" id="cadena" />
-                <p> Contenido del archivo: </p>
-                <pre id="unico2"></pre>
-          
-                <% console.log("Estamos en Analizador"); 
-                    
-                %>
-                <script src="./proyect1.js"></script>
-
-    </div>
-
-          
           
 
         <!--Aca esta mi imagen-->
