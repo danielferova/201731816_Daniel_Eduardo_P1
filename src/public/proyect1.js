@@ -1,3 +1,4 @@
+//funcion para leer el archivo
 function leerArchivo(e) {
     var archivo = e.target.files[0];
     if (!archivo) {
@@ -10,7 +11,7 @@ function leerArchivo(e) {
     };
     lector.readAsText(archivo);
   }
-  
+  //funcion para mostrar lo que acaba de leer
   function mostrarContenido(contenido) {
     
     var elemento = document.getElementById('contenido-archivo');
